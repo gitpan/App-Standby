@@ -1,0 +1,19 @@
+NAME
+    App::Standby - Managing on-call rotation and notification queues
+
+METHODS
+  get_groups
+    Returns a list of all groups.
+
+NAME
+    App::Standby - Baseclass
+
+AUTHOR
+    Dominik Schulz <dominik.schulz@gauner.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by Dominik Schulz.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
