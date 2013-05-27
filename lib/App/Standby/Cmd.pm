@@ -1,6 +1,6 @@
 package App::Standby::Cmd;
 {
-  $App::Standby::Cmd::VERSION = '0.01';
+  $App::Standby::Cmd::VERSION = '0.02';
 }
 BEGIN {
   $App::Standby::Cmd::AUTHORITY = 'cpan:TEX';

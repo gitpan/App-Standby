@@ -1,6 +1,6 @@
 package App::Standby::Cmd::Command::bootstrap;
 {
-  $App::Standby::Cmd::Command::bootstrap::VERSION = '0.01';
+  $App::Standby::Cmd::Command::bootstrap::VERSION = '0.02';
 }
 BEGIN {
   $App::Standby::Cmd::Command::bootstrap::AUTHORITY = 'cpan:TEX';

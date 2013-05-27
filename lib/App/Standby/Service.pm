@@ -1,6 +1,6 @@
 package App::Standby::Service;
 {
-  $App::Standby::Service::VERSION = '0.01';
+  $App::Standby::Service::VERSION = '0.02';
 }
 BEGIN {
   $App::Standby::Service::AUTHORITY = 'cpan:TEX';

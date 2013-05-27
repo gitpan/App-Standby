@@ -1,8 +1,9 @@
 [% INCLUDE includes/header.tpl %]
 
+<div class="container">
+
 <h1>[% "Adding Service for Group #[_1]" | l10n(group_id) %]</h1>
 
-<div id="main">
     <div class="forms">
 	<form method="POST" action="">
 	    <input type="hidden" name="rm" value="insert_service" />
@@ -21,7 +22,7 @@
 	    
 	    <label for="name">
 		[% "Name" | l10n %]:
-		<span class="small"></span>
+		<span class="small">Use lowercase alphanumerics only. Used as config prefix.</span>
 	    </label>
 	    <input type="text" name="name" value="[% name %]" />
 	    
