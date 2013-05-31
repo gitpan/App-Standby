@@ -29,6 +29,7 @@
          "requires" : {
             "Config::Yak" : "0",
             "Config::Yak::RequiredConfig" : "0",
+            "DBD::SQLite" : "0",
             "DBI" : "0",
             "Data::Pwgen" : "0",
             "File::ShareDir" : "0",
@@ -77,7 +78,7 @@
          "web" : "https://github.com/gittex/App-Standby"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_authority" : "cpan:TEX"
 }
 

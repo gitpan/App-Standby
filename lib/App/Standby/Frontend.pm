@@ -1,6 +1,6 @@
 package App::Standby::Frontend;
 {
-  $App::Standby::Frontend::VERSION = '0.02';
+  $App::Standby::Frontend::VERSION = '0.03';
 }
 BEGIN {
   $App::Standby::Frontend::AUTHORITY = 'cpan:TEX';

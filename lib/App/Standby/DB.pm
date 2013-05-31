@@ -1,6 +1,6 @@
 package App::Standby::DB;
 {
-  $App::Standby::DB::VERSION = '0.02';
+  $App::Standby::DB::VERSION = '0.03';
 }
 BEGIN {
   $App::Standby::DB::AUTHORITY = 'cpan:TEX';

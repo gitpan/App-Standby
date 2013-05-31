@@ -29,6 +29,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Config::Yak" => 0,
     "Config::Yak::RequiredConfig" => 0,
+    "DBD::SQLite" => 0,
     "DBI" => 0,
     "Data::Pwgen" => 0,
     "File::ShareDir" => 0,
@@ -61,7 +62,7 @@ my %WriteMakefileArgs = (
     "Test::MockObject::Universal" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
