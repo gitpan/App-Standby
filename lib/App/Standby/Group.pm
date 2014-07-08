@@ -1,7 +1,5 @@
 package App::Standby::Group;
-{
-  $App::Standby::Group::VERSION = '0.03';
-}
+$App::Standby::Group::VERSION = '0.04';
 BEGIN {
   $App::Standby::Group::AUTHORITY = 'cpan:TEX';
 }

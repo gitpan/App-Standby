@@ -10,9 +10,9 @@ build_requires:
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
-  File::ShareDir::Install: 0.03
+  File::ShareDir::Install: 0.06
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.132661'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -42,13 +42,11 @@ requires:
   Try::Tiny: 0
   URI::Escape: 0
   feature: 0
+  lib: 0
   mro: 0
   namespace::autoclean: 0
   perl: 5.010_000
   strict: 0
   warnings: 0
-resources:
-  bugtracker: https://github.com/gittex/App-Standby/issues
-  repository: git://github.com/gittex/App-Standby.git
-version: 0.03
+version: 0.04
 x_authority: cpan:TEX

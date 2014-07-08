@@ -1,7 +1,5 @@
 package App::Standby::Service::Pingdom;
-{
-  $App::Standby::Service::Pingdom::VERSION = '0.03';
-}
+$App::Standby::Service::Pingdom::VERSION = '0.04';
 BEGIN {
   $App::Standby::Service::Pingdom::AUTHORITY = 'cpan:TEX';
 }

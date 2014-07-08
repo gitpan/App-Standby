@@ -1,7 +1,5 @@
 package App::Standby;
-{
-  $App::Standby::VERSION = '0.03';
-}
+$App::Standby::VERSION = '0.04';
 BEGIN {
   $App::Standby::AUTHORITY = 'cpan:TEX';
 }
@@ -156,7 +154,18 @@ It needs not runtime configuration unless you want to change the path to the SQL
 database file.
 
 You need to bootstrap the app by creating the first group like this:
-   standby-mgm.pl bootstrap -nNewGroupName -kNewGroupKey
+
+    standby-mgm.pl bootstrap -nRoadies -kbase
+
+This will create the group named "Roadies" with the key "base". The key is a simple
+shared key necessary to change any value for this group in the webinterface. This
+is the most basic form of authorization, but has proven sufficient so far. Patches
+for more extensive forms of authentication are welcome.
+
+WARNING: Make sure the database file is owned by the user service the webinterface
+and also accessible by the user execution your cronjobs, e.g. www-data.
+
+    chown -R www-data:www-data /var/lib/standby-mgm/
 
 =head1 CONFIGURATION
 
@@ -187,7 +196,12 @@ username, password and contact_id. The last one may be given multiple times to u
 multiple Pingdom contacts in one account. If your service is called pingdom the keys would be
 called pingdom_apikey, pingdom_username, pingdom_password and pingdom_contact_id.
 
-The MS service class also needs only an endpoint.
+The MS service class needs an endpoint and a group id (name_group_id) which is used
+to update the appropriate group in the MS DB. If you call your MS service "ms" then the necessary
+keys would be called "ms_endpoint" with a value of e.g. "http://localhost/ms/?rm=update_queue" and
+"ms_group_id" with a value of e.g. "1".
+
+Have a look at the CPAN distribution Monitoring::Spooler for more documentation on MS.
 
 =head2 CONTACTS
 
@@ -210,6 +224,11 @@ are updated. This happens only when the order is changed.
 =head1 PLUGINS
 
 Have a look at the examples directory for some example plugins.
+
+=head1 DEBUGGING
+
+If anything goes wrong have a look at the logfile. Depending on your configuration its either at
+/var/log/standby-mgm.log or /tmp/standby-mgm.log.
 
 =head1 AUTHOR
 

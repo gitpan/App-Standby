@@ -1,7 +1,5 @@
 package App::Standby::Frontend;
-{
-  $App::Standby::Frontend::VERSION = '0.03';
-}
+$App::Standby::Frontend::VERSION = '0.04';
 BEGIN {
   $App::Standby::Frontend::AUTHORITY = 'cpan:TEX';
 }
@@ -266,6 +264,9 @@ sub _filter_params {
 
     # add the remote_addr
     $request_ref->{'remote_addr'} = $request->address();
+
+    # add the path
+    $request_ref->{'path'} = $request->path_info;
 
     return $request_ref;
 }

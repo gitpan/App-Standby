@@ -1,7 +1,5 @@
 package App::Standby::Service::HTTP;
-{
-  $App::Standby::Service::HTTP::VERSION = '0.03';
-}
+$App::Standby::Service::HTTP::VERSION = '0.04';
 BEGIN {
   $App::Standby::Service::HTTP::AUTHORITY = 'cpan:TEX';
 }
